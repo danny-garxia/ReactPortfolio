@@ -1,4 +1,4 @@
-#Daniel Garcia's Profolio using
+# Daniel Garcia's Profolio using
 
 # React + Vite
 
