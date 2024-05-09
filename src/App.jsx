@@ -1,11 +1,16 @@
 
-import styles from "./App.module.css"
+import styles from "./App.module.css";
+import Navbar from "./componets/Navbar/Navbar";
+
+
+
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
-  <dib>Hello World</dib>
+  <div className={styles.App} >
+
+<Navbar/>
+  </div>
   )
 }
 
