@@ -1,0 +1,71 @@
+@import "../../vars.css";
+
+.container{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    margin-top: 40px;
+    margin-left:10%;
+    margin-right: 10%;
+}
+.aboutCont{
+    display: flex;
+    flex-direction: row;
+}
+
+.content{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: var(--color-text);
+    z-index: 1;
+}
+.title{
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 33px ;
+    font-family: var(--font-Outfit);
+   
+}
+
+.aboutDesc{
+    font-size: 30px;
+    font-family: var(--font-Roboto);
+    margin-bottom: 52px;
+}
+
+.aboutImg{
+    width:40%;
+    height: auto;
+    z-index: 1;
+    border-radius: 10px;
+    animation-name: float;
+    margin-right: 50px;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-timing-function:ease-in-out;
+}
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+
+@keyframes float{
+  
+}
+
+
+
+@media screen and (max-width: 830px){
+
+    .container{
+        flex-direction: column;
+    }
+    .content{
+        align-items: center;
+    }
+    .aboutImg{
+        width:40%;
+    }
+
+};
+    

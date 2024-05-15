@@ -5,30 +5,37 @@ import styles from "./Navbar.module.css";
 
 
 export default function Navbar() {
+    const [openNav, setOpenNav] = useState('');
+
   return (
-  <nav className={styles.navbar}>
-    <a className ={styles.title} href="/"> Portfolio</a>
+    <nav className={styles.navbar}>
+    {/* Display the title */}
+    {window.innerWidth > 830 && (
+
+    <h1 className={styles.title}> Welcome </h1>
+    )}
+    
     <div className={styles.menu}>
+        {/* Conditionally render the image button based on screen width */}
+        {window.innerWidth < 830 && (
+            <img
+                className={styles.menuBtn}
+                src={openNav ? getImageURL("nav/closeIcon.png") : getImageURL("nav/menuIcon.png")}
+                alt="menu-button"
+                onClick={() => setOpenNav(!openNav)}
+            />
+        )}
 
-        <img className={styles.menuBtn} src={getImageURL("nav/menuIcon.png")}
-        alt ="menu-button"
-        />
-
-        <ul className={styles.menuItems}>
-            <li>
-                <a href="#about">About</a>
-            </li>
-            <li>
-                <a href="#experience">Experience</a>
-            </li>
-            <li>
-                <a href="#projects">Projects</a>
-            </li>
-            <li>
-                <a href="#contact">Contat</a>
-            </li>
+        {/* Menu items */}
+        <ul className={`${styles.menuItems} ${openNav && styles.openNav}`} onClick={() => setOpenNav(false)}>
+            <li><a href="#Home">Home</a></li>
+            <li><a href="#About">About</a></li>
+            <li><a href="#Projects">Projects</a></li>
+            <li><a href="#Contact">Contact</a></li>
         </ul>
     </div>
-   </nav>
-   );
+</nav>
+);
 };
+
+

@@ -1,16 +1,17 @@
 @import "../../vars.css";
 
-
-.navbar{
-    position: relative;
+.navbar{  
+    width: 100%;
+    position: fixed;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding-top: 61px;
+    justify-content:space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
     z-index: 2;
-    margin: 0 10%;
+    background-color: black;
+    z-index: 2; /* Set z-index to a higher value */
 }
-
 
 .title{
     font-size: 30px;
@@ -20,6 +21,7 @@
 
 .menu{
     display: flex;
+    position: relative;
 }
 
 .menuItems{
@@ -33,3 +35,42 @@
     text-decoration: none;
     color:var(--color-text);
 }
+
+@media screen and (max-width:830px) {
+    .navbar{
+        margin: 10% 5% ;
+        flex-direction: column;
+        background-color: transparent;
+    }
+    .menu{
+        position: absolute;
+        right: 0;
+        margin-right: 20%;
+        flex-direction: column;
+        align-items: flex-end;
+        gap: 11px;
+        z-index: 3;
+    }
+    .menuBtn{
+        display: block;
+        cursor: pointer;
+    }
+.menuItems{
+    display: none;
+    flex-direction: column;
+    align-self: center;
+    margin-top: 50%;
+    gap: 13;
+    border-radius: 10px;
+    background:rgb(25,55,100);
+    background: linear-gradient(0deg, rgba(25,55,100,0.2)0%, rgba(25,55,109,1)100%);
+    padding: 24px,33px;
+    box-shadow: 0 0 4px rgba(0,0,0,.25) ;
+}
+.openNav{
+    display: flex;
+    z-index: 1;
+}
+}
+
+

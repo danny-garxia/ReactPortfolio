@@ -1,0 +1,63 @@
+@import "../../vars.css";
+
+.container{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
+  z-index: 1;
+  margin-top: 40px;
+  margin-left:10%;
+  margin-right: 10%;
+}
+
+.title{
+  text-align: center;
+  font-size: 60px;
+  margin-bottom:33px ;
+  font-family: var(--font-Roboto);
+  background: linear-gradient(90deg, rgba(255,255,255,1) 70%, rgba(255,255,255,0) 120%);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+.row {
+    display: flex;
+  }
+  
+  .column {
+    flex: 33.33%;
+    padding: 5px;
+  }
+
+  .aboutImg{
+    width:100%;
+    height: auto;
+    z-index: 1;
+    border-radius: 10px;
+    animation-name: float;
+    padding-left: 30px ;
+    margin-right: 50px;
+    margin-left: 20px;
+    transition: width 2s, height 2s, transform 2s; /* detrmined duration and transformation size of image*/
+  }
+/* apply hover effects on my langauge worked with */
+.aboutImg:hover{
+  background-image: linear-gradient(#27408E, #7688BB);
+  width: 105%;
+  height: 105%;
+  transform: rotate(360deg);
+  padding: 0;
+
+}
+
+@media screen and (max-width: 830px){
+
+  .container{
+      flex-direction: column;
+  }
+  .content{
+      align-items: center;
+  }
+};
+  
