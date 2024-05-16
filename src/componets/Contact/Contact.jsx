@@ -24,11 +24,11 @@ export default function Contact() {
     <li className={styles.link}>
     <a href="tel:9517725520">
         <i className="fa fa-phone" style={{ fontSize: '48px', color: 'white' }}></i>
-        (951)-772-5520</a>
+        (951)-786-8890</a>
     </li>
     
     <li className={styles.link}>
-    <a href='mailto:dannygarcia2120@gmail.com'>
+    <a href='mailto:daniel@gmail.com'>
         <i className="fa fa-envelope" style={{ fontSize: '48px', color: 'white' }}></i>
         dannygarcia2120@gmail.com  </a>
     </li>
