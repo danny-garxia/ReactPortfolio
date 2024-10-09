@@ -22,13 +22,13 @@ export default function Contact() {
 {/* Setting up icons and linking them */}
 <ul className={styles.links} >
     <li className={styles.link}>
-    <a href="tel:9517868890">
+    <a href="tel:9517725520">
         <i className="fa fa-phone" style={{ fontSize: '48px', color: 'white' }}></i>
         (951)-786-8890</a>
     </li>
     
     <li className={styles.link}>
-    <a href='mailto:daniel@gmail.com'>
+    <a href='mailto:dannygarcia2120@gmail.com'>
         <i className="fa fa-envelope" style={{ fontSize: '48px', color: 'white' }}></i>
         daniel@gmail.com  </a>
     </li>
