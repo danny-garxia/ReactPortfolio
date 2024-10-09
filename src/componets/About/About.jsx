@@ -12,10 +12,10 @@ export default function About() {
        <h1 className={styles.title}> About Danny Garcia</h1>
           
           {/* Description */}
-        <p className={styles.aboutDesc}>I Am A Former Google Intern, That Recivced My Assoiciates In Computer Science At MT.
-         San Jacinto Community College And My Bachleors In Computer Science From California State Fullerton University. 
-         Since A Child I've Always Been Intrested In Joining The Tech Industry. I Have Experience As A Full Stack Developer, 
-         With Main Intrests In APP/WEB Development. 
+        <p className={styles.aboutDesc}>I Am A Former Google Intern. I Received My Associate's In Computer Science At MT.
+         San Jacinto Community College And My Bachelor's In Computer Science From California State Fullerton University. 
+          I've Completed Cybersecurity Courses, Web Development And App Development coursed. Giving Me Experience As A Full
+          Stack Developer. 
         </p>
     </div>
     
